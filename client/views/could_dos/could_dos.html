@@ -1,0 +1,11 @@
+<template name="CouldDos">
+  <ul>
+    {{#each could_dos}}
+      {{> CouldDo}}
+    {{/each}}
+  </ul>
+</template>
+
+<template name="CouldDo">
+  <li>{{maybe}}</li>
+</template>

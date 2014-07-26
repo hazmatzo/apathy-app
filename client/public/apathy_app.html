@@ -4,32 +4,3 @@
 
 <body>
 </body>
-
-<template name="Start">
-  Let's go! Oh, wait... Just stay home.
-  <a id="#start" href="{{apathy_session_path}}">Apathy!</a>
-</template>
-
-<template name="CouldDosPage">
-  <h1>What do you feel like doing?</h1>
-  {{> CouldDos }}
-  {{> NewCouldDo}}
-</template>
-
-<template name="NewCouldDo">
-  <form>
-    <input type="text" name="maybe" placeholder="I could do..." />
-  </form>
-</template>
-
-<template name="CouldDos">
-  <ul>
-    {{#each could_dos}}
-      {{> CouldDo}}
-    {{/each}}
-  </ul>
-</template>
-
-<template name="CouldDo">
-  <li>{{maybe}}</li>
-</template>
