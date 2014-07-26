@@ -13,9 +13,9 @@ Router.map(function() {
     path: '/:group_id/decision',
     data: function() {
       var could_dos = CouldDos.find({ group_id: this.params.group_id }).fetch();
-      var maybe = could_dos[Math.floor(Math.random()*could_dos.length)];
+      console.log("after could_dos");
       return {
-        maybe: maybe,
+        could_dos: could_dos,
         group_id: this.params.group_id
       };
     }

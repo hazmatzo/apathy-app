@@ -1,5 +1,7 @@
 Template.DecisionPage.helpers({
   maybe: function() {
-    return this.maybe.maybe;
+  	console.log("in maybe");
+    var maybe = this.could_dos[Math.floor(Math.random()*this.could_dos.length)];
+    return maybe.maybe;
   }
 });
