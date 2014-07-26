@@ -9,8 +9,8 @@ Router.map(function() {
     }
   });
   this.route('Start', { path: '/' });
-  this.route('ApathyPage', { 
-    path: '/:group_id/total_apathy',
+  this.route('DecisionPage', { 
+    path: '/:group_id/decision',
     data: function() {
       var could_dos = CouldDos.find({ group_id: this.params.group_id }).fetch();
       var maybe = could_dos[Math.floor(Math.random()*could_dos.length)];
