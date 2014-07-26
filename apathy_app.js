@@ -2,7 +2,15 @@ CouldDos = new Meteor.Collection("could_dos");
 
 if (Meteor.isClient) {
   Router.map(function() {
-    this.route('CouldDosPage', { path: '/:id' });
+    this.route('CouldDosPage', {
+      path: '/:id',
+      data: function() {
+        return {
+          group_id: this.params.id,
+          could_dos: CouldDos.find({ group_id: this.params.id }).fetch()
+        };
+      }
+    });
     this.route('Start', { path: '/' });
   });
 
@@ -19,7 +27,8 @@ if (Meteor.isClient) {
       var maybe = tmpl.find('input[name="maybe"]').value;
 
       CouldDos.insert({
-        maybe: maybe
+        maybe: maybe,
+        group_id: this.group_id
       });
 
       e.target.reset();
@@ -28,7 +37,7 @@ if (Meteor.isClient) {
 
   Template.CouldDos.helpers({
     could_dos: function() {
-      return CouldDos.find().fetch();
+      return this.could_dos;
     }
   });
 }
