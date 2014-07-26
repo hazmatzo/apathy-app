@@ -1,6 +1,17 @@
 CouldDos = new Meteor.Collection("could_dos");
 
 if (Meteor.isClient) {
+  Router.map(function() {
+    this.route('CouldDosPage', { path: '/:id' });
+    this.route('Start', { path: '/' });
+  });
+
+  Template.Start.helpers({
+    apathy_session_path: function() {
+      return "/lkjhdfiuhadfg";
+    }
+  });
+
   Template.NewCouldDo.events({
     'submit form': function(e, tmpl) {
       e.preventDefault();

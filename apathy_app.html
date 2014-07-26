@@ -3,10 +3,18 @@
 </head>
 
 <body>
+</body>
+
+<template name="Start">
+  Let's go! Oh, wait... Just stay home.
+  <a id="#start" href="{{apathy_session_path}}">Apathy!</a>
+</template>
+
+<template name="CouldDosPage">
   <h1>What do you feel like doing?</h1>
   {{> CouldDos }}
   {{> NewCouldDo}}
-</body>
+</template>
 
 <template name="NewCouldDo">
   <form>
