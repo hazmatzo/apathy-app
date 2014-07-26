@@ -1,13 +1,23 @@
-if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "Welcome to apathy_app.";
-  };
+CouldDos = new Meteor.Collection("could_dos");
 
-  Template.hello.events({
-    'click input': function () {
-      // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("You pressed the button");
+if (Meteor.isClient) {
+  Template.NewCouldDo.events({
+    'submit form': function(e, tmpl) {
+      e.preventDefault();
+
+      var maybe = tmpl.find('input[name="maybe"]').value;
+
+      CouldDos.insert({
+        maybe: maybe
+      });
+
+      e.target.reset();
+    }
+  });
+
+  Template.CouldDos.helpers({
+    could_dos: function() {
+      return CouldDos.find().fetch();
     }
   });
 }

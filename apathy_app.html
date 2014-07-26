@@ -3,11 +3,25 @@
 </head>
 
 <body>
-  {{> hello}}
+  <h1>What do you feel like doing?</h1>
+  {{> CouldDos }}
+  {{> NewCouldDo}}
 </body>
 
-<template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
+<template name="NewCouldDo">
+  <form>
+    <input type="text" name="maybe" placeholder="I could do..." />
+  </form>
+</template>
+
+<template name="CouldDos">
+  <ul>
+    {{#each could_dos}}
+      {{> CouldDo}}
+    {{/each}}
+  </ul>
+</template>
+
+<template name="CouldDo">
+  <li>{{maybe}}</li>
 </template>
