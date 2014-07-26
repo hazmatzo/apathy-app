@@ -7,5 +7,4 @@ standard-app-packages
 autopublish
 insecure
 iron-router
-bootstrap
 coffeescript

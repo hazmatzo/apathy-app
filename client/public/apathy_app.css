@@ -1,1 +1,35 @@
 /* CSS declarations go here */
+h1 {
+  font-family: 'Comic Sans MS';
+  color: #333333;
+}
+
+.button {
+  color: #333333;
+  display: inline-block;
+  border: 2px solid #333333;
+  padding: 5px;
+  font-family: 'Comic Sans MS';
+  text-decoration: none;
+  box-shadow: 3px 3px 0px #333333;
+}
+
+.inner-padding {
+  padding: 10px;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* Specific styles */
+
+.headline {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.start-button {
+  padding-left: 30px;
+  padding-right: 30px;
+}
