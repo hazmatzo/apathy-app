@@ -32,8 +32,9 @@ h1, p {
 input[type=text] {
   padding: 5px 10px;
   border: 1px solid #333333;
-  height: 10px;
-  width: 5px;
+  height: 25px;
+  width: 250px;
+  font-size: 18px;
 }
 
 .tooltip-icon {
