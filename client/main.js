@@ -14,6 +14,21 @@ Router.map(function() {
 
   this.route('Start', { path: '/' });
 
+  this.route('MyCouldDosPage', {
+    path: '/my-could-dos',
+    waitOn: function() {
+      return Meteor.subscribe('user_could_dos', Meteor.userId());
+    },
+    action: function() {
+      this.ready() ? this.render() : this.render('loading');
+    },
+    data: function() {
+      return {
+        could_dos: CouldDos.find().fetch()
+      };
+    }
+  })
+
   this.route('DecisionPage', {
     path: '/:group_id/decision',
     waitOn: function() {

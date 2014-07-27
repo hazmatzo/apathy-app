@@ -3,10 +3,11 @@ Template.NewCouldDo.events({
     e.preventDefault();
 
     var maybe = tmpl.find('input[name="maybe"]').value;
-
+    debugger;
     CouldDos.insert({
       maybe: maybe,
-      group_id: this.group_id
+      group_id: this.group_id,
+      user_id: Meteor.userId()
     });
 
     e.target.reset();
