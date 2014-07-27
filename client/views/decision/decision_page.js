@@ -16,11 +16,15 @@ var apathyData = [
   },
 
   {
-    apathyMessage: "... or just sleep now, avoid the rush."
+    apathyMessage: "... or you could take a nap."
   },
 
   {
-    apathyMessage: "Remember, there's a lot do out there... why don't you sleep?"
+    apathyMessage: "Remember, there's a lot you could do out there... why don't you sleep instead?"
+  },
+
+  {
+    apathyMessage: "... or you could just check Facebook."
   },
 
   {
@@ -28,7 +32,7 @@ var apathyData = [
   },
 
   {
-    apathyMessage: "... or you could just watch Orange is the New Black."
+    apathyMessage: "... or you could just catch up on Orange is the New Black."
   }, 
 
   {
@@ -36,7 +40,12 @@ var apathyData = [
   },
 
   {
-  	apathyMessage: "... or you could just google baby kittens."
+  	apathyMessage: "... or you could just google 'kittens'."
+  },
+
+  {
+  	apathyMessage: "... or you could just cuddle with the couch. It's very comfy."
+
   },
 
   {
