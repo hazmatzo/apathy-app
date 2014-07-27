@@ -7,3 +7,6 @@ standard-app-packages
 insecure
 iron-router
 coffeescript
+accounts-base
+accounts-facebook
+accounts-ui

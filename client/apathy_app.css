@@ -1,5 +1,5 @@
 /* CSS declarations go here */
-h1 {
+h1, p {
   font-family: 'Comic Sans MS';
   color: #333333;
 }
@@ -20,6 +20,36 @@ h1 {
 
 .centered {
   text-align: center;
+}
+
+.clearfix {
+  display: block;
+  overflow: hidden;
+  *overflow: visible;
+  *zoom: 1;
+}
+
+input[type=text] {
+  padding: 5px 10px;
+  border: 1px solid #333333;
+  height: 10px;
+  width: 5px;
+}
+
+.tooltip-icon {
+  float: left;
+  width: 20px;
+  height: 20px;
+  padding: 0px 5px;
+  background-image: url('exclamation.png');
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 5px 0px;
+}
+
+.tooltip-text {
+  float: left;
+  margin: 0px;
 }
 
 /* Specific styles */
