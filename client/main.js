@@ -19,11 +19,8 @@ Router.map(function() {
     waitOn: function() {
       return Meteor.subscribe('could_dos', this.params.group_id);
     },
-    action: function () {
-      if (this.ready())
-        this.render();
-      else
-        this.render('loading');
+    action: function() {
+      this.ready() ? this.render() : this.render('loading');
     },
     data: function() {
       return {
