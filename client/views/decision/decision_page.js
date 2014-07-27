@@ -39,5 +39,9 @@ var apathyData = [
 
   {
   	apathyMessage: "... or you could just google baby kittens."
+  },
+
+  {
+  	apathyMessage: "... but really, what are you, some sort of wizard? Just read the Internet! FOREVER!"
   }
 ]
