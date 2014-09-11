@@ -1,11 +1,13 @@
 <template name="CouldDos">
-  <ul>
-    {{#each could_dos}}
-      {{> CouldDo}}
-    {{/each}}
-  </ul>
+  <div class="centered">
+    <ul class="coulds">
+      {{#each could_dos}}
+        {{> CouldDo}}
+      {{/each}}
+    </ul>
+  </div>
 </template>
 
 <template name="CouldDo">
-  <li>{{maybe}}</li>
+  <li class="coulds">{{maybe}}</li>
 </template>

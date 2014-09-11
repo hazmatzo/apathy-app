@@ -1,5 +1,5 @@
 /* CSS declarations go here */
-h1, p {
+h1, p, li {
   font-family: 'Comic Sans MS';
   color: #333333;
 }
@@ -16,6 +16,10 @@ h1, p {
 
 .inner-padding {
   padding: 10px;
+}
+
+.mucho-inner-padding {
+  padding: 40px;
 }
 
 .centered {
@@ -63,4 +67,12 @@ input[type=text] {
 .start-button {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+ul.coulds  {
+  padding: 10px;
+}
+
+li.coulds {
+  display: block;
 }

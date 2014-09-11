@@ -50,5 +50,17 @@ var apathyData = [
 
   {
   	apathyMessage: "... but really, what are you, some sort of wizard? Just read the Internet! FOREVER!"
+  },
+
+  {
+  	apathyMessage: "... or you could get stuck in a rabbit hole of Wikipedia until you hit the philosophy page."
+  },
+  
+  {
+  	apathyMessage: "... or you could click through George Takei's Twitter stream for several hours."
+  },
+
+  {
+  	apathyMessage: "... but you could check Facebook first -- that won't take long."
   }
 ]
